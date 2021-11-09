@@ -1,8 +1,9 @@
 package com.switchfullywork.jpaprojects.advanced.switchtothesun.commandreader.handler;
 
-import advanced.switchtothesun.attraction.AttractionRepository;
-import advanced.switchtothesun.country.CountryRepository;
-import advanced.switchtothesun.metadata.MetadataRepository;
+
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.attraction.AttractionRepository;
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.country.CountryRepository;
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.metadata.MetadataRepository;
 import org.springframework.stereotype.Service;
 
 @Service

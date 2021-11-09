@@ -1,6 +1,7 @@
 package com.switchfullywork.jpaprojects.advanced.switchtothesun.attraction;
 
-import advanced.switchtothesun.country.Country;
+
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.country.Country;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

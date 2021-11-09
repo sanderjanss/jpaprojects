@@ -1,6 +1,7 @@
 package com.switchfullywork.jpaprojects.advanced.switchtothesun.commandreader;
 
-import advanced.switchtothesun.commandreader.handler.Handler;
+
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.commandreader.handler.Handler;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Arrays;

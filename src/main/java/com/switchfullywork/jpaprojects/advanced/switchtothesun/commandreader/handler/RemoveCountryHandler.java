@@ -1,6 +1,7 @@
 package com.switchfullywork.jpaprojects.advanced.switchtothesun.commandreader.handler;
 
-import advanced.switchtothesun.country.CountryRepository;
+
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.country.CountryRepository;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 

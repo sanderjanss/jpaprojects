@@ -1,7 +1,8 @@
 package com.switchfullywork.jpaprojects.advanced.switchtothesun;
 
-import advanced.switchtothesun.commandreader.CommandReader;
-import advanced.switchtothesun.commandreader.handler.*;
+
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.commandreader.CommandReader;
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.commandreader.handler.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;

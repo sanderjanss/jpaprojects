@@ -16,6 +16,18 @@ public class CountryRepository {
     }
 
     public List<Country> getAllCountries() {
-        return null;
+        return entityManager.createQuery("select c from Country c", Country.class).getResultList();
+    }
+
+    public Country getCountryById(String countryId){
+        return entityManager.createQuery("select c from Country c where c.countryId = :countryId", Country.class)
+                .setParameter("countryId", countryId)
+                .getSingleResult();
+    }
+
+    public Country getCountryByName(String countryName){
+        return entityManager.createQuery("select c from Country c where c.countryName = :countryName", Country.class)
+                .setParameter("countryName", countryName)
+                .getSingleResult();
     }
 }

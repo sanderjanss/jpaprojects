@@ -4,13 +4,29 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import static org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 
+@Entity
+@Table(name = "regions")
 public class Region {
-    private String regionName;
 
-    public Region(String regionName) {
+     @Id
+     @Column(name = "region_id")
+     private int regionId;
+     @Column(name = "region_name")
+     private String regionName;
+
+    public Region(int regionId, String regionName) {
+        this.regionId = regionId;
         this.regionName = regionName;
+    }
+
+    public Region() {
     }
 
     @Override

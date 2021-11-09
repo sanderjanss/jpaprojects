@@ -1,6 +1,7 @@
 package com.switchfullywork.jpaprojects.advanced.switchtothesun.attraction;
 
-import advanced.switchtothesun.country.Country;
+
+import com.switchfullywork.jpaprojects.advanced.switchtothesun.country.Country;
 
 public class Attraction {
 
