@@ -1,13 +1,15 @@
-package com.switchfullywork.jpaprojects.basic.codelab02.be.switchfully.person;
+package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully;
 
-import com.switchfullywork.jpaprojects.basic.codelab01.be.switchfully.CountryApp;
-import com.switchfullywork.jpaprojects.basic.codelab01.be.switchfully.country.CountryRepository;
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.Address;
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person;
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class PersonApp implements CommandLineRunner {
+
     private final PersonService personService;
 
     public PersonApp(PersonService personService) {
@@ -20,13 +22,7 @@ public class PersonApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        try{
-//            personService.addPerson(new Person("Jack", "Janssens", "Blue"));
-//            personService.updatePerson("Sander", "Geel");
-            personService.removePerson("Jack");
-
-        } catch (PersonNotFoundException pnf){
-            System.err.println(pnf.getMessage());
-        }
+        personService.addPerson(new Person("Sander", "Janssens", "Rood", new Address("Meir", 1, "Antwerpen", 2000)));
+ //       System.out.println(personService.findByName("Janssens"));
     }
 }

@@ -1,6 +1,8 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person;
 
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.Address;
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 
@@ -11,8 +13,8 @@ import static org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 public class Person {
 
     @Id
-    @SequenceGenerator(name = "person_seq", sequenceName = "PERSON_SEQ", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_seq")
+    @SequenceGenerator(name = "person_id_seq", sequenceName = "person_id_seq", initialValue = 1, allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_id_seq")
     private int id;
 
     @Column(name = "first_name")
@@ -21,13 +23,22 @@ public class Person {
     @Column(name = "last_name")
     private String lastName;
 
-    private Person() {
+    @Column(name = "fav_color")
+    private String favouriteColor;
+
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "address_id")
+    private Address address;
+
+    public Person() {
 
     }
 
-    public Person(String firstName, String lastName) {
+    public Person(String firstName, String lastName, String favouriteColor, Address address) {
         this.firstName = firstName;
         this.lastName = lastName;
+        this.favouriteColor = favouriteColor;
+        this.address = address;
     }
 
     public String getLastName() {
@@ -36,6 +47,14 @@ public class Person {
 
     public String getFirstName() {
         return firstName;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public String getFavouriteColor() {
+        return favouriteColor;
     }
 
     @Override

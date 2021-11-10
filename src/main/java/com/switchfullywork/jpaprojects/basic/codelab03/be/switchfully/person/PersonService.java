@@ -16,4 +16,12 @@ public class PersonService {
         this.personRepository = personRepository;
     }
 
+
+    public void addPerson(Person person){
+        personRepository.save(person);
+    }
+
+    public Person findByName(String lastName){
+        return personRepository.findByName(lastName);
+    }
 }

@@ -13,13 +13,12 @@ public class PersonRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public Person save(Person person){
+    public void save(Person person){
         entityManager.persist(person);
-        return person;
     }
 
     public Person findByName(String lastName){
-        return entityManager.createQuery("from Person where lastName = :lastName", Person.class)
+        return entityManager.createQuery("select p from Person p where p.lastName = :lastName", Person.class)
                     .setParameter("lastName", lastName)
                     .getSingleResult();
     }
