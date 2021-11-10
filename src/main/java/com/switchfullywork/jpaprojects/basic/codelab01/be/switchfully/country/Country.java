@@ -1,13 +1,11 @@
 package com.switchfullywork.jpaprojects.basic.codelab01.be.switchfully.country;
 
+import com.switchfullywork.jpaprojects.basic.codelab01.be.switchfully.region.Region;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 import static org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 
@@ -20,13 +18,14 @@ public class Country {
     private String countryId;
     @Column(name = "country_name")
     private String countryName;
-    @Column(name = "region_id")
-    private int regionId;
+    @OneToOne()
+    @JoinColumn(name = "region_id")
+    private Region region;
 
-    public Country(String countryId, String countryName, int regionId) {
+    public Country(String countryId, String countryName, Region region) {
         this.countryId = countryId;
         this.countryName = countryName;
-        this.regionId = regionId;
+        this.region = region;
     }
 
     public Country() {
