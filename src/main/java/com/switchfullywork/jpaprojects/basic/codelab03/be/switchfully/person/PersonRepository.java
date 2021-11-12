@@ -22,4 +22,8 @@ public class PersonRepository {
                     .setParameter("lastName", lastName)
                     .getSingleResult();
     }
+
+    public Person findPerson(int id){
+        return entityManager.find(Person.class, id);
+    }
 }

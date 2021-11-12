@@ -1,6 +1,7 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person;
 
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.Address;
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.Hobby;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.annotations.Cascade;
 
@@ -30,15 +31,20 @@ public class Person {
     @JoinColumn(name = "address_id")
     private Address address;
 
+    @ManyToOne
+    @JoinColumn(name = "hobby_id")
+    private Hobby hobby;
+
     public Person() {
 
     }
 
-    public Person(String firstName, String lastName, String favouriteColor, Address address) {
+    public Person(String firstName, String lastName, String favouriteColor, Address address, Hobby hobby) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.favouriteColor = favouriteColor;
         this.address = address;
+        this.hobby = hobby;
     }
 
     public String getLastName() {
@@ -64,5 +70,13 @@ public class Person {
 
     public int getId() {
         return id;
+    }
+
+    public void addHobby(Hobby hobby){
+        this.hobby = hobby;
+    }
+
+    public Hobby getHobby() {
+        return hobby;
     }
 }
