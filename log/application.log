@@ -1,0 +1,110 @@
+2021-11-12 14:57:31.233  INFO 21344 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Starting BookApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 21344 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 14:57:31.235  INFO 21344 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : No active profile set, falling back to default profiles: default
+2021-11-12 14:57:31.291  INFO 21344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 14:57:31.962  INFO 21344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 14:57:31.984  INFO 21344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2021-11-12 14:57:32.558  INFO 21344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 14:57:33.485  INFO 21344 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 14:57:33.550  INFO 21344 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 14:57:33.612  INFO 21344 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 14:57:33.777  INFO 21344 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 14:57:33.947  INFO 21344 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 14:57:35.162  INFO 21344 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 14:57:35.175  INFO 21344 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 14:57:35.413  INFO 21344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 14:57:35.435  INFO 21344 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Started BookApp in 4.703 seconds (JVM running for 5.334)
+2021-11-12 14:57:35.983  WARN 21344 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Not a valid book
+2021-11-12 14:57:35.990  INFO 21344 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 14:57:35.994  INFO 21344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 14:57:36.131  INFO 21344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 15:04:03.915  INFO 10012 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Starting BookApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 10012 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 15:04:03.916  INFO 10012 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : No active profile set, falling back to default profiles: default
+2021-11-12 15:04:03.963  INFO 10012 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 15:04:04.489  INFO 10012 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:04:04.507  INFO 10012 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2021-11-12 15:04:04.811  INFO 10012 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 15:04:05.567  INFO 10012 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 15:04:05.611  INFO 10012 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:04:05.647  INFO 10012 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:04:05.741  INFO 10012 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:04:05.832  INFO 10012 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:04:06.824  INFO 10012 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:04:06.833  INFO 10012 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:04:07.039  INFO 10012 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 15:04:07.061  INFO 10012 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Started BookApp in 3.485 seconds (JVM running for 4.204)
+2021-11-12 15:04:07.421  INFO 10012 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:04:07.424  INFO 10012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 15:04:07.763  INFO 10012 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 15:04:28.540  INFO 22788 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Starting BookApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 22788 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 15:04:28.542  INFO 22788 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : No active profile set, falling back to default profiles: default
+2021-11-12 15:04:28.598  INFO 22788 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 15:04:29.239  INFO 22788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:04:29.262  INFO 22788 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2021-11-12 15:04:29.743  INFO 22788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 15:04:30.678  INFO 22788 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 15:04:30.739  INFO 22788 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:04:30.800  INFO 22788 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:04:30.975  INFO 22788 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:04:31.145  INFO 22788 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:04:32.358  INFO 22788 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:04:32.370  INFO 22788 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:04:32.603  INFO 22788 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 15:04:32.624  INFO 22788 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Started BookApp in 4.588 seconds (JVM running for 5.233)
+2021-11-12 15:04:32.980  WARN 22788 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Not a valid book
+2021-11-12 15:04:32.987  INFO 22788 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:04:32.990  INFO 22788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 15:04:33.336  INFO 22788 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 15:05:06.953  INFO 4652 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Starting BookApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 4652 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 15:05:06.954  INFO 4652 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : No active profile set, falling back to default profiles: default
+2021-11-12 15:05:07.007  INFO 4652 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 15:05:07.658  INFO 4652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:05:07.678  INFO 4652 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-11-12 15:05:08.154  INFO 4652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 15:05:09.071  INFO 4652 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 15:05:09.131  INFO 4652 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:05:09.194  INFO 4652 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:05:09.352  INFO 4652 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:05:09.507  INFO 4652 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:05:10.751  INFO 4652 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:05:10.765  INFO 4652 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:05:11.016  INFO 4652 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 15:05:11.037  INFO 4652 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Started BookApp in 4.582 seconds (JVM running for 5.206)
+2021-11-12 15:05:11.589  INFO 4652 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:05:11.593  INFO 4652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 15:05:11.706  INFO 4652 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 15:13:48.994  INFO 16144 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Starting BookApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 16144 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 15:13:48.996  INFO 16144 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : No active profile set, falling back to default profiles: default
+2021-11-12 15:13:49.051  INFO 16144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 15:13:49.727  INFO 16144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:13:49.747  INFO 16144 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-11-12 15:13:50.210  INFO 16144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 15:13:51.135  INFO 16144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 15:13:51.200  INFO 16144 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:13:51.270  INFO 16144 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:13:51.445  INFO 16144 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:13:51.605  INFO 16144 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:13:52.825  INFO 16144 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:13:52.838  INFO 16144 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:13:53.068  INFO 16144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 15:13:53.091  INFO 16144 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Started BookApp in 4.596 seconds (JVM running for 5.257)
+2021-11-12 15:13:53.593  INFO 16144 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:13:53.598  INFO 16144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 15:13:53.778  INFO 16144 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 15:14:16.624  INFO 23376 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Starting BookApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 23376 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 15:14:16.625  INFO 23376 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : No active profile set, falling back to default profiles: default
+2021-11-12 15:14:16.679  INFO 23376 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 15:14:17.332  INFO 23376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 15:14:17.352  INFO 23376 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2021-11-12 15:14:17.831  INFO 23376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 15:14:18.732  INFO 23376 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 15:14:18.791  INFO 23376 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 15:14:18.851  INFO 23376 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 15:14:19.010  INFO 23376 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 15:14:19.174  INFO 23376 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 15:14:20.359  INFO 23376 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 15:14:20.368  INFO 23376 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:14:20.605  INFO 23376 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 15:14:20.626  INFO 23376 --- [restartedMain] c.s.j.b.c.be.switchfully.BookApp         : Started BookApp in 4.49 seconds (JVM running for 5.131)
+2021-11-12 15:14:21.200  INFO 23376 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 15:14:21.205  INFO 23376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 15:14:21.365  INFO 23376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
