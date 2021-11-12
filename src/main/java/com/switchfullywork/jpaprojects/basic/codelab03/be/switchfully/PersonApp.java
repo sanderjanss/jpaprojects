@@ -32,5 +32,6 @@ public class PersonApp implements CommandLineRunner {
 //                new Hobby("Basketball", "BallSport")));
 //        System.out.println(personService.findByName("Janssens"));
 //        personService.addHobbyToPerson(5, "Basketball");
+        System.out.println(personService.findByName("Hanssens"));
     }
 }

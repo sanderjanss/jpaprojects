@@ -1636,3 +1636,218 @@ Caused by: org.hibernate.TransientPropertyValueException: object references an u
 2021-11-12 21:45:56.225  INFO 10256 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2021-11-12 21:45:56.241  INFO 10256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2021-11-12 21:45:56.318  INFO 10256 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 21:53:05.731  INFO 21172 --- [restartedMain] c.s.j.b.c.be.switchfully.AddressApp      : Starting AddressApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 21172 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 21:53:05.731  INFO 21172 --- [restartedMain] c.s.j.b.c.be.switchfully.AddressApp      : No active profile set, falling back to default profiles: default
+2021-11-12 21:53:05.825  INFO 21172 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 21:53:06.853  INFO 21172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 21:53:06.884  INFO 21172 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2021-11-12 21:53:07.452  INFO 21172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 21:53:09.267  INFO 21172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 21:53:09.392  INFO 21172 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 21:53:09.549  INFO 21172 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 21:53:09.912  INFO 21172 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 21:53:10.366  INFO 21172 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 21:53:11.989  INFO 20096 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : Starting PersonApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 20096 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 21:53:11.989  INFO 20096 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : No active profile set, falling back to default profiles: default
+2021-11-12 21:53:12.067  INFO 20096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 21:53:13.059  INFO 21172 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 21:53:13.075  INFO 21172 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:53:13.247  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 21:53:13.294  INFO 20096 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2021-11-12 21:53:13.450  INFO 21172 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 21:53:13.481  INFO 21172 --- [restartedMain] c.s.j.b.c.be.switchfully.AddressApp      : Started AddressApp in 8.485 seconds (JVM running for 9.463)
+2021-11-12 21:53:14.033  INFO 20096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 21:53:14.505  INFO 21172 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 21:53:14.536 ERROR 21172 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.6.jar:2.5.6]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.AddressApp.main(AddressApp.java:25) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.5.6.jar:2.5.6]
+Caused by: org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person.bookList, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:585) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at java.base/java.lang.String.valueOf(String.java:4215) ~[na:na]
+	at java.base/java.lang.StringBuffer.append(StringBuffer.java:300) ~[na:na]
+	at org.apache.commons.lang3.builder.ToStringStyle.appendDetail(ToStringStyle.java:626) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringStyle.appendInternal(ToStringStyle.java:503) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringStyle.append(ToStringStyle.java:466) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringBuilder.append(ToStringBuilder.java:860) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.appendFieldsIn(ReflectionToStringBuilder.java:654) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.toString(ReflectionToStringBuilder.java:840) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.toString(ReflectionToStringBuilder.java:313) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.toString(ReflectionToStringBuilder.java:166) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringBuilder.reflectionToString(ToStringBuilder.java:162) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person.toString(Person.java:83) ~[classes/:na]
+	at java.base/java.lang.String.valueOf(String.java:4215) ~[na:na]
+	at java.base/java.io.PrintStream.println(PrintStream.java:1047) ~[na:na]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.PersonApp.run(PersonApp.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791) ~[spring-boot-2.5.6.jar:2.5.6]
+	... 10 common frames omitted
+
+2021-11-12 21:53:14.552  INFO 21172 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:53:14.552  INFO 21172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 21:53:14.709  INFO 21172 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 21:53:15.635  INFO 20096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 21:53:15.792  INFO 20096 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 21:53:15.932  INFO 20096 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 21:53:16.327  INFO 20096 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 21:53:16.683  INFO 20096 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 21:53:18.961  INFO 20096 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 21:53:18.976  INFO 20096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:53:19.448  INFO 20096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 21:53:19.480  INFO 20096 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : Started PersonApp in 8.253 seconds (JVM running for 9.434)
+2021-11-12 21:53:20.449  INFO 20096 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 21:53:20.495 ERROR 20096 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.6.jar:2.5.6]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.PersonApp.main(PersonApp.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.5.6.jar:2.5.6]
+Caused by: org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person.bookList, could not initialize proxy - no Session
+	at org.hibernate.collection.internal.AbstractPersistentCollection.throwLazyInitializationException(AbstractPersistentCollection.java:606) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:218) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:585) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.collection.internal.PersistentBag.toString(PersistentBag.java:621) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at java.base/java.lang.String.valueOf(String.java:4215) ~[na:na]
+	at java.base/java.lang.StringBuffer.append(StringBuffer.java:300) ~[na:na]
+	at org.apache.commons.lang3.builder.ToStringStyle.appendDetail(ToStringStyle.java:626) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringStyle.appendInternal(ToStringStyle.java:503) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringStyle.append(ToStringStyle.java:466) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringBuilder.append(ToStringBuilder.java:860) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.appendFieldsIn(ReflectionToStringBuilder.java:654) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.toString(ReflectionToStringBuilder.java:840) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.toString(ReflectionToStringBuilder.java:313) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ReflectionToStringBuilder.toString(ReflectionToStringBuilder.java:166) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at org.apache.commons.lang3.builder.ToStringBuilder.reflectionToString(ToStringBuilder.java:162) ~[commons-lang3-3.12.0.jar:3.12.0]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person.toString(Person.java:83) ~[classes/:na]
+	at java.base/java.lang.String.valueOf(String.java:4215) ~[na:na]
+	at java.base/java.io.PrintStream.println(PrintStream.java:1047) ~[na:na]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.PersonApp.run(PersonApp.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791) ~[spring-boot-2.5.6.jar:2.5.6]
+	... 10 common frames omitted
+
+2021-11-12 21:53:20.495  INFO 20096 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:53:20.511  INFO 20096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 21:53:20.542  INFO 20096 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 21:54:16.190  INFO 2300 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : Starting PersonApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 2300 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 21:54:16.206  INFO 2300 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : No active profile set, falling back to default profiles: default
+2021-11-12 21:54:16.284  INFO 2300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 21:54:17.334  INFO 2300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 21:54:17.373  INFO 2300 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+2021-11-12 21:54:18.039  INFO 2300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 21:54:19.231  INFO 2300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 21:54:19.310  INFO 2300 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 21:54:19.404  INFO 2300 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 21:54:19.669  INFO 2300 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 21:54:20.029  INFO 2300 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 21:54:21.862  INFO 2300 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 21:54:21.893  INFO 2300 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:54:22.276  INFO 2300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 21:54:22.323  INFO 2300 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : Started PersonApp in 6.877 seconds (JVM running for 7.821)
+2021-11-12 21:54:23.294  INFO 2300 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:54:23.310  INFO 2300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 21:54:23.795  INFO 2300 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-12 21:55:03.908  INFO 13576 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : Starting PersonApp using Java 17.0.1 on DESKTOP-VVMKEP9 with PID 13576 (C:\Switchfully\2. JAVA\jpaprojects\target\classes started by colruyt in C:\Switchfully\2. JAVA\jpaprojects)
+2021-11-12 21:55:03.908  INFO 13576 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : No active profile set, falling back to default profiles: default
+2021-11-12 21:55:04.002  INFO 13576 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-12 21:55:05.085  INFO 13576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-11-12 21:55:05.116  INFO 13576 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+2021-11-12 21:55:05.822  INFO 13576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-12 21:55:07.047  INFO 13576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-12 21:55:07.160  INFO 13576 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-11-12 21:55:07.254  INFO 13576 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-11-12 21:55:07.551  INFO 13576 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-11-12 21:55:07.927  INFO 13576 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-11-12 21:55:09.679  INFO 13576 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-11-12 21:55:09.695  INFO 13576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:55:10.133  INFO 13576 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-12 21:55:10.164  INFO 13576 --- [restartedMain] c.s.j.b.c.be.switchfully.PersonApp       : Started PersonApp in 6.985 seconds (JVM running for 7.924)
+2021-11-12 21:55:11.297  INFO 13576 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-11-12 21:55:11.328 ERROR 13576 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:794) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:775) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:345) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343) ~[spring-boot-2.5.6.jar:2.5.6]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332) ~[spring-boot-2.5.6.jar:2.5.6]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.PersonApp.main(PersonApp.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.5.6.jar:2.5.6]
+Caused by: org.springframework.dao.IncorrectResultSizeDataAccessException: query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:385) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551) ~[spring-orm-5.3.12.jar:5.3.12]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonRepository$$EnhancerBySpringCGLIB$$868039e6.findByName(<generated>) ~[classes/:na]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonService.findByName(PersonService.java:33) ~[classes/:na]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonService$$FastClassBySpringCGLIB$$13e3e7d2.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:698) ~[spring-aop-5.3.12.jar:5.3.12]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonService$$EnhancerBySpringCGLIB$$a771f955.findByName(<generated>) ~[classes/:na]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.PersonApp.run(PersonApp.java:35) ~[classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:791) ~[spring-boot-2.5.6.jar:2.5.6]
+	... 10 common frames omitted
+Caused by: javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:128) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1659) ~[hibernate-core-5.4.32.Final.jar:5.4.32.Final]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonRepository.findByName(PersonRepository.java:22) ~[classes/:na]
+	at com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonRepository$$FastClassBySpringCGLIB$$81b4490d.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:783) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:753) ~[spring-aop-5.3.12.jar:5.3.12]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.12.jar:5.3.12]
+	... 34 common frames omitted
+
+2021-11-12 21:55:11.344  INFO 13576 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-12 21:55:11.344  INFO 13576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-12 21:55:11.501  INFO 13576 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

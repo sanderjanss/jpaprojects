@@ -38,7 +38,7 @@ public class Person {
     @JoinColumn(name = "hobby_id")
     private Hobby hobby;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     @JoinColumn(name = "person_id")
     private List<Book> bookList;
 
