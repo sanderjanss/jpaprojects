@@ -55,6 +55,13 @@ public class Person {
         this.bookList = new ArrayList<>();
     }
 
+    public Person(String firstName, String lastName, String favouriteColor) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.favouriteColor = favouriteColor;
+        this.bookList = new ArrayList<>();
+    }
+
     public String getLastName() {
         return lastName;
     }
@@ -78,6 +85,10 @@ public class Person {
 
     public int getId() {
         return id;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public void addHobby(Hobby hobby){

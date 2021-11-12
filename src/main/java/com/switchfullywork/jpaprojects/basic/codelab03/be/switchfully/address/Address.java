@@ -1,5 +1,6 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address;
 
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 
 import javax.persistence.*;
@@ -23,12 +24,22 @@ public class Address {
     private String region;
     @Column(name = "zip_code")
     private int zipCode;
+    @OneToOne(mappedBy = "address")
+    private Person person;
 
     public Address(String streetName, int houseNumber, String region, int zipCode) {
         this.streetName = streetName;
         this.houseNumber = houseNumber;
         this.region = region;
         this.zipCode = zipCode;
+    }
+
+    public Address(String streetName, int houseNumber, String region, int zipCode, Person person) {
+        this.streetName = streetName;
+        this.houseNumber = houseNumber;
+        this.region = region;
+        this.zipCode = zipCode;
+        this.person = person;
     }
 
     public Address() {
@@ -54,6 +65,14 @@ public class Address {
         return zipCode;
     }
 
+    public Person getPerson() {
+        return person;
+    }
+
+    public Address setPerson(Person person) {
+        this.person = person;
+        return this;
+    }
 
     @Override
     public String toString(){

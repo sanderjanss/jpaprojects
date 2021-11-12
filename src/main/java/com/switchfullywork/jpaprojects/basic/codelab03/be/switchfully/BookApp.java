@@ -1,8 +1,6 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully;
 
-import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.book.Book;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.book.BookService;
-import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.HobbyService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
