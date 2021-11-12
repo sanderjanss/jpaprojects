@@ -4,6 +4,8 @@ import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.Hobb
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.HobbyDoesExistException;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.HobbyDoesNotExistException;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.HobbyService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class HobbyApp implements CommandLineRunner {
 
     private final HobbyService hobbyService;
+    public final Logger logger = LoggerFactory.getLogger(HobbyApp.class);
 
     public HobbyApp(HobbyService hobbyService) {
         this.hobbyService = hobbyService;
@@ -26,7 +29,7 @@ public class HobbyApp implements CommandLineRunner {
 //        try {
 //            hobbyService.createHobby(new Hobby("Tetris", "E-sport"));
 //        } catch (HobbyDoesExistException hdne){
-//            System.err.println(hdne.getMessage());
+//            logger(hdne.getMessage());
 //        }
     }
 }

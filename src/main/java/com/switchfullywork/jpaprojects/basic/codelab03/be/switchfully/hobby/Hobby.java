@@ -13,8 +13,7 @@ import static org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 public class Hobby {
 
     @Id
-    @SequenceGenerator(name = "hobby_id_seq", sequenceName = "hobby_id_seq", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "hobby_id_seq")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "hobby_id")
     private int hobbyId;
     @Column(name = "name")

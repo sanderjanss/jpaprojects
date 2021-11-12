@@ -1,5 +1,6 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person;
 
+import com.switchfullywork.jpaprojects.basic.codelab02.be.switchfully.person.PersonNotFoundException;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.Hobby;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.HobbyDoesNotExistException;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.HobbyRepository;
@@ -41,5 +42,11 @@ public class PersonService {
        else {
            throw new HobbyDoesNotExistException("Hobby does not exist.");
        }
+    }
+
+    public void assertPersonExists(Person person) {
+        if (person == null){
+            throw new PersonNotFoundException("Not a valid person");
+        }
     }
 }

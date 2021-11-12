@@ -4,6 +4,8 @@ import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.Ad
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.Hobby;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.PersonService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PersonApp implements CommandLineRunner {
 
     private final PersonService personService;
+    public final Logger logger = LoggerFactory.getLogger(PersonApp.class);
 
     public PersonApp(PersonService personService) {
         this.personService = personService;
@@ -23,10 +26,10 @@ public class PersonApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        personService.addPerson(new Person(
-                "Sander", "Janssens", "Rood",
-                new Address("Meir", 3, "Antwerpen", 2000),
-                new Hobby("Tetris", "E-sport")));
+//        personService.addPerson(new Person(
+//                "Jefke", "Hanssens", "Rood",
+//                new Address("Meir", 3, "Antwerpen", 2000),
+//                new Hobby("Basketball", "BallSport")));
 //        System.out.println(personService.findByName("Janssens"));
 //        personService.addHobbyToPerson(5, "Basketball");
     }

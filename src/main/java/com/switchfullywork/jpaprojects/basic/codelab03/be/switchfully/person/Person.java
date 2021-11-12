@@ -1,11 +1,15 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person;
 
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.Address;
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.book.Book;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.Hobby;
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 
@@ -14,8 +18,7 @@ import static org.apache.commons.lang3.builder.ToStringStyle.SHORT_PREFIX_STYLE;
 public class Person {
 
     @Id
-    @SequenceGenerator(name = "person_id_seq", sequenceName = "person_id_seq", initialValue = 1, allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_id_seq")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     @Column(name = "first_name")
@@ -35,6 +38,10 @@ public class Person {
     @JoinColumn(name = "hobby_id")
     private Hobby hobby;
 
+    @OneToMany
+    @JoinColumn(name = "person_id")
+    private List<Book> bookList;
+
     public Person() {
 
     }
@@ -45,6 +52,7 @@ public class Person {
         this.favouriteColor = favouriteColor;
         this.address = address;
         this.hobby = hobby;
+        this.bookList = new ArrayList<>();
     }
 
     public String getLastName() {
@@ -78,5 +86,13 @@ public class Person {
 
     public Hobby getHobby() {
         return hobby;
+    }
+
+    public List<Book> getBookList() {
+        return bookList;
+    }
+
+    public void addBook(Book book){
+        bookList.add(book);
     }
 }
