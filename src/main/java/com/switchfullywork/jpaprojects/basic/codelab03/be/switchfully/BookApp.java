@@ -1,5 +1,6 @@
 package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully;
 
+import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.book.Book;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.book.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,6 +42,6 @@ public class BookApp implements CommandLineRunner {
 //        bookService.saveBook(new Book("a2", "Patrick Rothfuss"));
 //        bookService.saveBook(new Book("a3", "Patrick Rothfuss"));
 
-        bookService.removeAllBooks("a");
+//        bookService.addBookToAPerson("Janssens", "a3");
     }
 }

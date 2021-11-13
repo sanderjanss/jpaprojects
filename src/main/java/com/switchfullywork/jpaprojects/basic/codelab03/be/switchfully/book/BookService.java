@@ -32,6 +32,7 @@ public class BookService {
         assertBookExists(availableBook);
         personService.assertPersonExists(person);
         person.addBook(availableBook);
+        availableBook.addPersonToBook(person);
     }
 
     public void removeBook(String title){

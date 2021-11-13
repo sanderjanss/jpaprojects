@@ -30,7 +30,7 @@ public class Person {
     @Column(name = "fav_color")
     private String favouriteColor;
 
-    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
+    @OneToOne(cascade = CascadeType.ALL, optional = false)
     @JoinColumn(name = "address_id")
     private Address address;
 
@@ -38,8 +38,10 @@ public class Person {
     @JoinColumn(name = "hobby_id")
     private Hobby hobby;
 
-    @OneToMany(fetch = FetchType.EAGER)
-    @JoinColumn(name = "person_id")
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "person_book",
+            joinColumns = { @JoinColumn(name = "person_id") },
+            inverseJoinColumns = { @JoinColumn(name = "book_id") })
     private List<Book> bookList;
 
     public Person() {
@@ -78,9 +80,23 @@ public class Person {
         return favouriteColor;
     }
 
+//    @Override
+//    public String toString() {
+//        return ToStringBuilder.reflectionToString(this, SHORT_PREFIX_STYLE);
+//    }
+
+
     @Override
     public String toString() {
-        return ToStringBuilder.reflectionToString(this, SHORT_PREFIX_STYLE);
+        return "Person{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", favouriteColor='" + favouriteColor + '\'' +
+                ", address=" + address +
+                ", hobby=" + hobby +
+                ", bookList=" + bookList +
+                '}';
     }
 
     public int getId() {

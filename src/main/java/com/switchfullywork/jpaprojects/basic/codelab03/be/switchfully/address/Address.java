@@ -74,8 +74,20 @@ public class Address {
         return this;
     }
 
+//    @Override
+//    public String toString(){
+//        return ToStringBuilder.reflectionToString(this, SHORT_PREFIX_STYLE);
+//    }
+
+
     @Override
-    public String toString(){
-        return ToStringBuilder.reflectionToString(this, SHORT_PREFIX_STYLE);
+    public String toString() {
+        return "Address{" +
+                "addressId=" + addressId +
+                ", streetName='" + streetName + '\'' +
+                ", houseNumber=" + houseNumber +
+                ", region='" + region + '\'' +
+                ", zipCode=" + zipCode +
+                '}';
     }
 }

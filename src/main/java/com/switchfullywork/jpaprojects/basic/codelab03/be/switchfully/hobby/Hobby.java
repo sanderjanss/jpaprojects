@@ -41,11 +41,20 @@ public class Hobby {
         return type;
     }
 
+//    @Override
+//    public String toString() {
+//        return ToStringBuilder.reflectionToString(this, SHORT_PREFIX_STYLE);
+//    }
+
+
     @Override
     public String toString() {
-        return ToStringBuilder.reflectionToString(this, SHORT_PREFIX_STYLE);
+        return "Hobby{" +
+                "hobbyId=" + hobbyId +
+                ", name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                '}';
     }
-
 
     @Override
     public boolean equals(Object o) {

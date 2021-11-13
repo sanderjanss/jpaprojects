@@ -24,7 +24,7 @@ public class AddressApp implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
-    addressService.saveAddress(new Address("NieuwStraat", 1, "Brussel", 2000,
-            new Person("Ben", "Bensen", "Groen")));
+//    addressService.saveAddress(new Address("WinnerStreet", 1, "Brussel", 2000,
+//            new Person("Jack", "Russel", "Groen")));
     }
 }
