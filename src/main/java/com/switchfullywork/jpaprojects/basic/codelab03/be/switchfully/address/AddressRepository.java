@@ -15,7 +15,7 @@ public class AddressRepository {
         this.entityManager = entityManager;
     }
 
-    public void addAddress(Address address){
+    public void saveAddress(Address address){
         entityManager.persist(address);
     }
 }

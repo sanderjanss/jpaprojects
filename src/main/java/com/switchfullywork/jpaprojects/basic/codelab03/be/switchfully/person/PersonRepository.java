@@ -15,7 +15,7 @@ public class PersonRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public Person findByName(String lastName){
+    public Person findPersonByName(String lastName){
         try{
             return entityManager.createQuery("select p from Person p where p.lastName = :lastName", Person.class)
                     .setParameter("lastName", lastName)
@@ -27,7 +27,7 @@ public class PersonRepository {
 
     }
 
-    public void save(Person person) {
+    public void savePerson(Person person) {
         entityManager.persist(person);
     }
 

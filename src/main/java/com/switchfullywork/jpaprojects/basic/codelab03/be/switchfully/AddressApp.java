@@ -2,8 +2,6 @@ package com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully;
 
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.Address;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.address.AddressService;
-import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.book.BookService;
-import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.hobby.Hobby;
 import com.switchfullywork.jpaprojects.basic.codelab03.be.switchfully.person.Person;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,7 +24,7 @@ public class AddressApp implements CommandLineRunner {
     }
     @Override
     public void run(String... args) throws Exception {
-//    addressService.createAddress(new Address("NieuwStraat", 1, "Brussel", 2000,
-//            new Person("Ben", "Bensen", "Groen")));
+    addressService.saveAddress(new Address("NieuwStraat", 1, "Brussel", 2000,
+            new Person("Ben", "Bensen", "Groen")));
     }
 }

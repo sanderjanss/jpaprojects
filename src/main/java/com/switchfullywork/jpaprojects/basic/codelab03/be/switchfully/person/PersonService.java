@@ -23,14 +23,14 @@ public class PersonService {
     }
 
 
-    public void addPerson(Person person){
+    public void savePerson(Person person){
         Hobby hobby = hobbyRepository.findHobbyByName(person.getHobby().getName());
         person.addHobby(hobby);
-        personRepository.save(person);
+        personRepository.savePerson(person);
     }
 
-    public Person findByName(String lastName){
-        return personRepository.findByName(lastName);
+    public Person findPersonByName(String lastName){
+        return personRepository.findPersonByName(lastName);
     }
 
     public void addHobbyToPerson(int id, String hobbyName){

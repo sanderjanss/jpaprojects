@@ -30,7 +30,7 @@ public class Person {
     @Column(name = "fav_color")
     private String favouriteColor;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "address_id")
     private Address address;
 

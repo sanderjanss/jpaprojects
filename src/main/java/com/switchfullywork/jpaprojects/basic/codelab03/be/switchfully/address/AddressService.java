@@ -18,11 +18,10 @@ public class AddressService {
         this.personRepository = personRepository;
     }
 
-    public void createAddress(Address address) {
-        addressRepository.addAddress(address);
+    public void saveAddress(Address address) {
         Person person = address.getPerson();
         person.setAddress(address);
-        personRepository.save(person);
+        addressRepository.saveAddress(address);
     }
 }
 

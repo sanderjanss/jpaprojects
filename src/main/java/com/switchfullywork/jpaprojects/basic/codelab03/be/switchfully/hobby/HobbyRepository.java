@@ -12,7 +12,7 @@ public class HobbyRepository {
     @PersistenceContext
     private EntityManager entityManager;
 
-    public void createHobby(Hobby hobby){
+    public void saveHobby(Hobby hobby){
         entityManager.persist(hobby);
     }
 

@@ -24,7 +24,7 @@ public class Address {
     private String region;
     @Column(name = "zip_code")
     private int zipCode;
-    @OneToOne(mappedBy = "address")
+    @OneToOne(mappedBy = "address", cascade = CascadeType.ALL)
     private Person person;
 
     public Address(String streetName, int houseNumber, String region, int zipCode) {

@@ -28,7 +28,7 @@ public class BookService {
 
     public void addBookToAPerson(String lastName, String title) throws RuntimeException{
         Book availableBook = bookRepository.findBookByTitle(title);
-        Person person = personRepository.findByName(lastName);
+        Person person = personRepository.findPersonByName(lastName);
         assertBookExists(availableBook);
         personService.assertPersonExists(person);
         person.addBook(availableBook);

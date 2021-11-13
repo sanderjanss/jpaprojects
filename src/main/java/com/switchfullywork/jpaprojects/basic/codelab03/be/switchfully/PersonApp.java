@@ -26,12 +26,12 @@ public class PersonApp implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        personService.addPerson(new Person(
-//                "Jefke", "Hanssens", "Rood",
-//                new Address("Meir", 3, "Antwerpen", 2000),
+//        personService.savePerson(new Person(
+//                "Jonas", "Hanssens", "Rood",
+//                new Address("Meir", 4, "Antwerpen", 2000),
 //                new Hobby("Basketball", "BallSport")));
-//        System.out.println(personService.findByName("Janssens"));
+//        System.out.println(personService.findPersonByName("Janssens"));
 //        personService.addHobbyToPerson(5, "Basketball");
-        System.out.println(personService.findByName("Hanssens"));
+//        System.out.println(personService.findPersonByName("Hanssens"));
     }
 }
