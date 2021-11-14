@@ -30,14 +30,17 @@ public class Person {
     @Column(name = "fav_color")
     private String favouriteColor;
 
-    @OneToOne(cascade = CascadeType.ALL, optional = false)
+    //bidirectional
+    @OneToOne(cascade = CascadeType.PERSIST, optional = false)
     @JoinColumn(name = "address_id")
     private Address address;
 
+    //unidirectional
     @ManyToOne
     @JoinColumn(name = "hobby_id")
     private Hobby hobby;
 
+    //bidirectional
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "person_book",
             joinColumns = { @JoinColumn(name = "person_id") },

@@ -42,6 +42,6 @@ public class BookApp implements CommandLineRunner {
 //        bookService.saveBook(new Book("a2", "Patrick Rothfuss"));
 //        bookService.saveBook(new Book("a3", "Patrick Rothfuss"));
 
-//        bookService.addBookToAPerson("Janssens", "a3");
+//        bookService.addBookToAPerson("Janssens", "Bello Gallico");
     }
 }

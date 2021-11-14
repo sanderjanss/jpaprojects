@@ -21,6 +21,6 @@ public class FindAttractionsWithTypeHandler implements Handler {
     @Override
     public void handle(String parameter) {
         System.out.println("Finding attractions of type " + parameter);
-        attractionRepository.findAttractionsOfType(parameter).forEach(System.out::println);
+//        attractionRepository.findAttractionsOfType(parameter).forEach(System.out::println);
     }
 }
